@@ -1,4 +1,8 @@
 /* ===== Responsive Styles ===== */
+html, body {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
 
 /* Tablet */
 @media (max-width: 1024px) {
