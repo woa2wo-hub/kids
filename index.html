@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모닥 - 대한민국 1위 비대면 진료 앱</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" width="36" height="36">
+                    <circle cx="20" cy="20" r="18" fill="#4ECDC4" opacity="0.15"/>
+                    <path d="M20 6C12.268 6 6 12.268 6 20s6.268 14 14 14 14-6.268 14-14S27.732 6 20 6zm0 2c6.627 0 12 5.373 12 12s-5.373 12-12 12S8 26.627 8 20 13.373 8 20 8z" fill="#4ECDC4"/>
+                    <path d="M18 13h4v14h-4z" fill="#4ECDC4"/>
+                    <path d="M13 18h14v4H13z" fill="#4ECDC4"/>
+                </svg>
+                <span class="logo-text">모닥<br><small>모두의닥터</small></span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#about" class="nav-link">회사 소개</a>
+                <a href="#services" class="nav-link">서비스 소개</a>
+                <a href="#contact" class="nav-link">인재영입</a>
+                <a href="#" class="nav-link nav-highlight">제휴문의</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="heroSection">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up">
+                집, 회사, 어린이집 어디서든<br>
+                병원 가기 전<br>
+                모닥으로 미리 접수해요
+            </h1>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="#" class="store-btn store-btn-apple">
+                    <i class="fab fa-apple"></i>
+                    <span>App Store</span>
+                </a>
+                <a href="#" class="store-btn store-btn-google">
+                    <svg class="google-play-icon" viewBox="0 0 512 512" width="20" height="20"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+                    <span>Google Play</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Buildings & Phone -->
+        <div class="hero-scene">
+            <div class="hero-building-lt">
+                <svg viewBox="0 0 140 140" width="130" height="130">
+                    <rect x="25" y="50" width="90" height="70" rx="4" fill="#D4C4A8"/>
+                    <polygon points="70,15 120,55 20,55" fill="#5B9BD5"/>
+                    <rect x="38" y="64" width="16" height="14" rx="2" fill="#FFF9C4"/>
+                    <rect x="62" y="64" width="16" height="14" rx="2" fill="#FFF9C4"/>
+                    <rect x="86" y="64" width="16" height="14" rx="2" fill="#FFF9C4"/>
+                    <rect x="55" y="88" width="24" height="32" rx="3" fill="#8D6E63"/>
+                    <circle cx="122" cy="90" r="14" fill="#81C784"/>
+                    <rect x="120" y="100" width="4" height="16" rx="2" fill="#A1887F"/>
+                </svg>
+            </div>
+            <div class="hero-building-lb">
+                <svg viewBox="0 0 110 110" width="100" height="100">
+                    <rect x="20" y="45" width="70" height="55" rx="4" fill="#FFCCBC"/>
+                    <polygon points="55,10 100,48 10,48" fill="#E57373"/>
+                    <rect x="34" y="58" width="14" height="12" rx="2" fill="#FFF9C4"/>
+                    <rect x="56" y="58" width="14" height="12" rx="2" fill="#FFF9C4"/>
+                    <rect x="42" y="76" width="20" height="24" rx="3" fill="#8D6E63"/>
+                    <circle cx="12" cy="72" r="12" fill="#A5D6A7"/>
+                    <circle cx="12" cy="62" r="9" fill="#81C784"/>
+                    <rect x="10" y="80" width="4" height="20" rx="2" fill="#A1887F"/>
+                </svg>
+            </div>
+            <div class="hero-building-rt">
+                <svg viewBox="0 0 110 120" width="110" height="120">
+                    <rect x="10" y="22" width="75" height="88" rx="4" fill="#F5E6D3"/>
+                    <rect x="10" y="12" width="75" height="16" rx="3" fill="#E57373"/>
+                    <rect x="40" y="32" width="16" height="5" rx="1" fill="#E57373"/>
+                    <rect x="45" y="26" width="5" height="16" rx="1" fill="#E57373"/>
+                    <rect x="22" y="52" width="13" height="11" rx="1.5" fill="#BBDEFB"/>
+                    <rect x="41" y="52" width="13" height="11" rx="1.5" fill="#BBDEFB"/>
+                    <rect x="60" y="52" width="13" height="11" rx="1.5" fill="#BBDEFB"/>
+                    <rect x="22" y="70" width="13" height="11" rx="1.5" fill="#BBDEFB"/>
+                    <rect x="41" y="70" width="13" height="11" rx="1.5" fill="#BBDEFB"/>
+                    <rect x="60" y="70" width="13" height="11" rx="1.5" fill="#BBDEFB"/>
+                    <rect x="38" y="90" width="20" height="20" rx="2" fill="#90CAF9"/>
+                    <circle cx="95" cy="80" r="14" fill="#A5D6A7"/>
+                    <circle cx="95" cy="68" r="11" fill="#81C784"/>
+                    <rect x="93" y="90" width="4" height="20" rx="2" fill="#A1887F"/>
+                </svg>
+            </div>
+            <div class="hero-building-rb">
+                <svg viewBox="0 0 90 130" width="85" height="120">
+                    <rect x="5" y="10" width="65" height="110" rx="4" fill="#B0BEC5"/>
+                    <rect x="14" y="24" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="30" y="24" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="46" y="24" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="14" y="38" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="30" y="38" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="46" y="38" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="14" y="52" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="30" y="52" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="46" y="52" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="14" y="66" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="30" y="66" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="46" y="66" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="14" y="80" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="30" y="80" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="46" y="80" width="10" height="8" rx="1" fill="#E3F2FD"/>
+                    <rect x="26" y="98" width="22" height="22" rx="2" fill="#78909C"/>
+                </svg>
+            </div>
+
+            <div class="hero-phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="phone-header">
+                            <span class="phone-close">✕</span>
+                            <span class="phone-header-text">접수하기 (모닥청소년과의원)</span>
+                        </div>
+                        <div class="phone-body">
+                            <div class="phone-section-title">
+                                <strong>진료대상 선택</strong>
+                                <span class="phone-help">?</span>
+                            </div>
+                            <p class="phone-note">※ 실제 진료받을 분으로 선택해주세요.</p>
+                            <div class="phone-list">
+                                <div class="phone-list-item">
+                                    <div class="phone-avatar avatar-orange"><i class="fas fa-user"></i></div>
+                                    <span>김모닥</span>
+                                </div>
+                                <div class="phone-list-item">
+                                    <div class="phone-avatar avatar-pink"><i class="fas fa-baby"></i></div>
+                                    <span>김첫째</span>
+                                </div>
+                                <div class="phone-list-item">
+                                    <div class="phone-avatar avatar-blue"><i class="fas fa-child"></i></div>
+                                    <span>김둘째</span>
+                                </div>
+                            </div>
+                            <div class="phone-add-btn">+ 가족추가</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-finger">
+                    <i class="fas fa-hand-pointer"></i>
+                </div>
+            </div>
+        </div>
+
+        <button class="hero-scroll-indicator" id="scrollDownBtn" aria-label="아래로 스크롤">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </button>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">"우리는 <span class="text-highlight">성장</span>합니다"</h2>
+                <p class="section-desc">국내 최초, 최고의 병원 예약 서비스의 꿈, 차근차근 실현시키고 있습니다.</p>
+            </div>
+            <div class="stats-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <div class="stat-number" data-target="700">0</div>
+                    <span class="stat-unit">만 회</span>
+                    <p class="stat-label">누적 접수 횟수</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-hospital"></i></div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <span class="stat-unit">만 회</span>
+                    <p class="stat-label">누적 예약 횟수</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-bell"></i></div>
+                    <div class="stat-number" data-target="5500">0</div>
+                    <span class="stat-unit">만 회</span>
+                    <p class="stat-label">누적 대기알림 발송 횟수</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dream Section -->
+    <section class="dream-section">
+        <div class="container">
+            <div class="dream-grid">
+                <div class="dream-text" data-aos="fade-right">
+                    <h2 class="section-title">"우리는 <span class="text-highlight-blue">꿈</span>을 꿉니다"</h2>
+                    <p class="dream-desc">
+                        건강한 삶을 위해 필요한 서비스와<br>
+                        유용한 정보를 제공하여 더 행복하고 편리한 내일을 만드는 것<br>
+                        <strong>모닥</strong>의 미션입니다.
+                    </p>
+                </div>
+                <div class="dream-visual" data-aos="fade-left">
+                    <div class="dream-card">
+                        <div class="dream-illustration">
+                            <div class="doctor-icon"><i class="fas fa-user-md"></i></div>
+                            <div class="patient-icon"><i class="fas fa-user"></i></div>
+                            <div class="heart-line">
+                                <svg viewBox="0 0 200 60" width="200">
+                                    <path d="M0,30 Q50,0 100,30 Q150,60 200,30" stroke="#4ECDC4" stroke-width="2" fill="none" class="pulse-line"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="dream-card-text">의료진과 환자가 편안한 마음으로<br>만나기를 <strong>꿈꿉니다</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before Section -->
+    <section class="before-section" id="services">
+        <div class="container">
+            <h2 class="section-title-left" data-aos="fade-up">사용 전</h2>
+            <div class="before-icons" data-aos="fade-up" data-aos-delay="100">
+                <div class="before-item">
+                    <div class="before-icon-circle"><i class="fas fa-tired"></i></div>
+                    <p>오픈런</p>
+                </div>
+                <div class="before-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="before-item">
+                    <div class="before-icon-circle"><i class="fas fa-phone-alt"></i></div>
+                    <p>전화문의</p>
+                </div>
+                <div class="before-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="before-item">
+                    <div class="before-icon-circle"><i class="fas fa-hospital-user"></i></div>
+                    <p>현장접수</p>
+                </div>
+                <div class="before-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="before-item">
+                    <div class="before-icon-circle"><i class="fas fa-user-friends"></i></div>
+                    <p>병원대기</p>
+                </div>
+                <div class="before-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="before-item">
+                    <div class="before-icon-circle"><i class="fas fa-clock"></i></div>
+                    <p>오래 기다림</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- After Section -->
+    <section class="after-section">
+        <div class="container">
+            <h2 class="section-title-left" data-aos="fade-up">사용 후</h2>
+            <div class="services-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card service-card-yellow">
+                    <div class="service-text">
+                        <h3>병원 예약 / 접수</h3>
+                        <p>대기없이 진료받으세요<br>예약/접수하고 시간맞춰 병원 방문하세요</p>
+                    </div>
+                    <div class="service-img"><div class="service-illustration si-booking"><i class="fas fa-calendar-check"></i></div></div>
+                </div>
+                <div class="service-card service-card-blue">
+                    <div class="service-text">
+                        <h3>병원 / 약국찾기</h3>
+                        <p>가까운 병원과 약국을 알려드립니다<br>병원과 약국의 위치, 영업시간 정보를 확인해보세요</p>
+                    </div>
+                    <div class="service-img"><div class="service-illustration si-search"><i class="fas fa-search-location"></i></div></div>
+                </div>
+                <div class="service-card service-card-mint">
+                    <div class="service-text">
+                        <h3>실시간<br>대기현황 알림</h3>
+                        <p>어디서든 편하게 진료 대기순서를 확인하세요<br>카카오 알림톡으로 대기순서를 알려드립니다</p>
+                    </div>
+                    <div class="service-img"><div class="service-illustration si-realtime"><i class="fas fa-bell"></i></div></div>
+                </div>
+                <div class="service-card service-card-green">
+                    <div class="service-text">
+                        <h3>영유아 검진</h3>
+                        <p>어렵고 복잡했던 문진표가 편해집니다<br>병원 방문 전 휴대폰으로 손쉽게 작성하고 보관하세요</p>
+                    </div>
+                    <div class="service-img"><div class="service-illustration si-baby"><i class="fas fa-baby"></i></div></div>
+                </div>
+                <div class="service-card service-card-coral">
+                    <div class="service-text">
+                        <h3>검사결과 알림</h3>
+                        <p>아직도 전화로 검사결과 안내받으시나요?<br>이제 결과가 도착하면 알림톡을 통해 자동으로 알려드려요</p>
+                    </div>
+                    <div class="service-img"><div class="service-illustration si-result"><i class="fas fa-file-medical-alt"></i></div></div>
+                </div>
+                <div class="service-card service-card-purple">
+                    <div class="service-text">
+                        <h3>실손보험 청구</h3>
+                        <p>진료받고 보험금 청구까지 3분이면 충분해요<br>모바일로 실손청구에 필요한 서류를 받아보세요</p>
+                    </div>
+                    <div class="service-img"><div class="service-illustration si-insurance"><i class="fas fa-shield-alt"></i></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                "우리는 <span class="text-highlight-red">편리</span>하게 <span class="text-highlight-green">건강</span>하고 싶습니다."
+            </h2>
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <button class="slider-btn slider-prev" id="prevBtn" aria-label="이전">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="testimonials-wrapper" id="testimonialsWrapper">
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        <div class="testimonial-card">
+                            <div class="testimonial-img"><div class="testimonial-illustration"><i class="fas fa-comments"></i></div></div>
+                            <div class="testimonial-content">
+                                <h4>주사피부염에 수란트라 발라도 될까요?<br>수란트라 효과, 사용법 총정리</h4>
+                                <p>주사피부염에 수란트라 발라도 될까? 노벨상 수상 성분으로 모낭충을 직접 사멸시키고 염증을 완화하는 수란트라의 효과, 사용법, 처방 방법까지 한눈에 정리했어요.</p>
+                                <a href="#" class="testimonial-link">더보기 &gt;</a>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-img"><div class="testimonial-illustration t2"><i class="fas fa-heartbeat"></i></div></div>
+                            <div class="testimonial-content">
+                                <h4>원추각막, 조기 진단이 중요!<br>각막이식 위험 낮추는 방법</h4>
+                                <p>시야가 흐리고 안경 도수가 자주 바뀐다면? 원추각막일 수 있어요. 조기 진단으로 각막이식 위험을 낮추는 방법, 원추각막 원인, 증상, 치료법을 한눈에 정리했어요.</p>
+                                <a href="#" class="testimonial-link">더보기 &gt;</a>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-img"><div class="testimonial-illustration t3"><i class="fas fa-child"></i></div></div>
+                            <div class="testimonial-content">
+                                <h4>가을 나들이<br>건강하게 즐기려면?</h4>
+                                <p>안전사고 예방법부터 응급 대처법까지 가을철 야외활동 건강수칙부터 벌쏘임·낙상·식중독 대처법까지 한눈에! 일교차 큰 환절기, 안전하고 건강하게 가을을 보내는 법을 알려드려요.</p>
+                                <a href="#" class="testimonial-link">더보기 &gt;</a>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-img"><div class="testimonial-illustration t4"><i class="fas fa-stethoscope"></i></div></div>
+                            <div class="testimonial-content">
+                                <h4>원추각막, 조기 진단이 중요!<br>각막이식 위험 낮추는 방법</h4>
+                                <p>시야가 흐리고 안경 도수가 자주 바뀐다면? 원추각막일 수 있어요. 조기 진단으로 각막이식 위험을 낮추는 방법, 원추각막 원인, 증상, 치료법을 한눈에 정리했어요.</p>
+                                <a href="#" class="testimonial-link">더보기 &gt;</a>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-img"><div class="testimonial-illustration t5"><i class="fas fa-pills"></i></div></div>
+                            <div class="testimonial-content">
+                                <h4>주사피부염에 수란트라 발라도 될까요?<br>수란트라 효과, 사용법 총정리</h4>
+                                <p>주사피부염에 수란트라 발라도 될까? 노벨상 수상 성분으로 모낭충을 직접 사멸시키고 염증을 완화하는 수란트라의 효과, 사용법, 처방 방법까지 한눈에 정리했어요.</p>
+                                <a href="#" class="testimonial-link">더보기 &gt;</a>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-img"><div class="testimonial-illustration t6"><i class="fas fa-calendar-check"></i></div></div>
+                            <div class="testimonial-content">
+                                <h4>가을 나들이<br>건강하게 즐기려면?</h4>
+                                <p>안전사고 예방법부터 응급 대처법까지 가을철 야외활동 건강수칙부터 벌쏘임·낙상·식중독 대처법까지 한눈에! 일교차 큰 환절기, 안전하고 건강하게 가을을 보내는 법을 알려드려요.</p>
+                                <a href="#" class="testimonial-link">더보기 &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn slider-next" id="nextBtn" aria-label="다음">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section class="partner-section" id="contact">
+        <div class="container">
+            <div class="partner-grid">
+                <div class="partner-left" data-aos="fade-right">
+                    <h2>"모두의 닥터와<br>함께 할 <span class="text-highlight-blue">파트너</span>를 모십니다"</h2>
+                </div>
+                <div class="partner-right" data-aos="fade-left">
+                    <div class="partner-info">
+                        <h3>환자와 병원을 연결합니다.</h3>
+                        <p>환자와 병원사이의 연결고리를 만들어<br>더 나은 의료 서비스를 제공합니다.</p>
+                        <a href="#" class="btn-outline">더 알아보기 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="partner-info">
+                        <h3>기타 제휴 및 제안</h3>
+                        <p>modak@modak.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg-pattern"></div>
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <div class="cta-badge">
+                    <div class="cta-phone"><i class="fas fa-mobile-alt"></i></div>
+                </div>
+                <div class="cta-text">
+                    <h2 class="cta-title">
+                        <span class="cta-number">600</span>만이 선택한<br>
+                        대한민국 <span class="cta-highlight">1위</span> 비대면 진료 앱
+                    </h2>
+                    <p class="cta-desc">지금도 매일 100명 이상의 사용자가 모닥을 다운받고 있습니다.</p>
+                    <a href="#" class="btn-cta"><i class="fas fa-download"></i> 앱 다운받기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <svg class="logo-icon" viewBox="0 0 40 40" width="30" height="30">
+                        <circle cx="20" cy="20" r="18" fill="#4ECDC4" opacity="0.15"/>
+                        <path d="M20 6C12.268 6 6 12.268 6 20s6.268 14 14 14 14-6.268 14-14S27.732 6 20 6zm0 2c6.627 0 12 5.373 12 12s-5.373 12-12 12S8 26.627 8 20 13.373 8 20 8z" fill="#4ECDC4"/>
+                        <path d="M18 13h4v14h-4z" fill="#4ECDC4"/>
+                        <path d="M13 18h14v4H13z" fill="#4ECDC4"/>
+                    </svg>
+                    <span class="logo-text-footer">모닥<br><small>모두의닥터</small></span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">고객센터</a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 모닥(모두의닥터). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
